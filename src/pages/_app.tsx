@@ -9,7 +9,7 @@ import Head from "next/head";
 import { parseCookies } from "nookies";
 import { Router } from 'next/router';
 import { Fragment, ReactElement, ReactNode } from "react";
-import logo from "@/assets/images/logo_raize.png"
+import logo from "@/assets/images/logo.png"
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement,) => ReactNode
@@ -31,10 +31,10 @@ const MyApp = ({ Component, pageProps, ...props }: AppPropsWithLayout) => {
     <GlobalProvider {...props}>
       <Head>
         <title>
-          Raize
+          Good Citizen Admin Panel
         </title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Wide Selection of Music Artists." />
+        <meta name="description" content="Get notified when emergency vehicles are nearby. Clear the road, save precious minutes, and help ambulances reach those in need faster." />
         <link rel="stylesheet" href="https://unpkg.com/treeflex/dist/css/treeflex.css"></link>
         <link rel="icon" href={logo.src} />
         {/* <style jsx global>{`
