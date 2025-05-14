@@ -118,7 +118,7 @@ const View = (props: any) => {
       dataIndex: "status",
       key: "status",
       render: (text: any, res: any, index: any) => {
-        return res?.pickup_address ?? "N/A";
+        return res?.status ?? "Completed";
       },
     },
     // {
