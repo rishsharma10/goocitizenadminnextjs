@@ -45,6 +45,7 @@ const MenuBar = () => {
           getItem(<Link href='/' className='text-decoration-none ms-2'>Dashboard</Link>, '', <HenceforthIcons.Dashboard />),
           getItem(<Link href='/user/page/1' className='text-decoration-none ms-2'>Users</Link>, 'user', <HenceforthIcons.Process />),
           getItem(<Link href='/driver/page/1' className='text-decoration-none ms-2'>Drivers</Link>, 'driver', <HenceforthIcons.Process />),
+          getItem(<Link href='/document/page/1' className='text-decoration-none ms-2'>Documents</Link>, 'document', <HenceforthIcons.Process />),
        
       ];
     return (
